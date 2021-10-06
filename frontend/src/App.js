@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Assessment from './components/Assessment';
 import DataForm from './components/DataForm';
 import Footer from './components/Footer';
+import CareerOptions from './components/CareerOptions';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/assessment" component={Assessment}></Route>
         <Route exact path="/enroll" component={DataForm}></Route>
+        <Route exact path="/career" component={CareerOptions}></Route>
       </Switch>
       <Footer />
     </Router>
