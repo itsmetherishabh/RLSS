@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <nav className='navbar navbar-expand-lg navbar-light bg-info p-2'>
+      <nav className='navbar navbar-expand-lg navbar-dark bg-dark p-2'>
         <div className='container-fluid'>
           <Link className='navbar-brand' to='/'>
             RLSS

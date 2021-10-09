@@ -2,8 +2,8 @@ import React from 'react'
 
 const Science = () => {
     return (
-        <div>
-            <form method="post" action="/science">
+        <div class="container">
+            <form method="post" class="py-3" action="/science">
                 <label htmlFor="q1">Q1. What do you meant by Science?</label>
                 <input type="text" className="form-control" placeholder="type your answer" id="q1" required="true" />
                 <label htmlFor="q1">Q2. What do you understand by Newton's third law of motion?</label>

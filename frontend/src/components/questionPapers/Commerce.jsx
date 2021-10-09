@@ -2,7 +2,7 @@ import React from 'react'
 
 const Commerce = () => {
     return (
-        <div>
+        <div class="container">
             <form method="post" action="/commerce">
                 <label htmlFor="q1">Q1. What is commerce?</label>
                 <input type="text" className="form-control" placeholder="type your answer" id="q1" required="true" />

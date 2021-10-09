@@ -5,14 +5,14 @@ const DataForm = () => {
     <div className='px-2 py-4'>
       <div className='container'>
         <h2>Enroll Yourself</h2>  
-        <form method='post'>
+        <form method='post' className="mt-2">
           <label className='' htmlFor='name'>
             Name
           </label>
           <input
             type='text'
             name='name'
-            className='form-control'
+            className='form-control my-2'
             id='name'
             placeholder='enter your name'
           />
@@ -22,7 +22,7 @@ const DataForm = () => {
           <input
             type='email'
             name='email'
-            className='form-control'
+            className='form-control my-2'
             id='email'
             placeholder='name@example.com'
           />
@@ -32,14 +32,14 @@ const DataForm = () => {
           <input
             type='number'
             name='phone'
-            className='form-control'
+            className='form-control my-2'
             id='phone'
             placeholder='enter your phone number'
           />
           <label className='' htmlFor='gender'>
             Gender
           </label>
-          <div className='form-check' id='gender'>
+          <div className='form-check mt-2' id='gender'>
             <input
               className='form-check-input'
               type='radio'
@@ -69,13 +69,13 @@ const DataForm = () => {
               name='gender'
               id='other'
             />
-            <label className='form-check-label' for='other'>
+            <label className='form-check-label mb-2' for='other'>
               Other
             </label>
           </div>
           <label className='' htmlFor="dob">Date of Birth</label>
-          <input type='date' name="dob" className='form-control' id="dob" style={{maxWidth:"200px"}} />
-          <button type='submit' className='btn btn-primary'>SUBMIT</button>
+          <input type='date' name="dob" className='form-control my-2' id="dob" style={{maxWidth:"200px"}} />
+          <button type='submit' className='btn btn-primary my-2'>SUBMIT</button>
         </form>
       </div>
     </div>
