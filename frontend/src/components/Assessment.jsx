@@ -8,12 +8,14 @@ const Assessment = () => {
   return (
     <div>
       <Router>
-        <Link className='btn btn-dark btn-lg' to='/science'>
-          Science
-        </Link>
-        <Link className='btn btn-dark btn-lg' to='/commerce'>
-          Commerce
-        </Link>
+        <div className="m-2">
+            <Link className='btn btn-light btn-lg' to='/science'>
+            Science
+            </Link>
+            <Link className='btn btn-light btn-lg mx-2' to='/commerce'>
+            Commerce
+            </Link>
+        </div>
         <Switch>
           <Route exact path='/science' component={Science}></Route>
           <Route exact path='/commerce' component={Commerce}></Route>

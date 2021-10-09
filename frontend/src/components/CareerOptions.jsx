@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const CareerOptions = () => {
   return (
@@ -12,9 +14,9 @@ const CareerOptions = () => {
             <br />
             Click below to know more about career in this...
           </p>
-          <a href='#' className='btn btn-primary'>
+          <Link to='/highSchool' className='btn btn-primary'>
             Click Here
-          </a>
+          </Link>
         </div>
       </div>
       <div className='card m-3 p-3' style={{width: "18rem"}}>
@@ -26,9 +28,9 @@ const CareerOptions = () => {
             <br />
             Click below to know more about career in this...
           </p>
-          <a href='#' className='btn btn-primary'>
+          <Link to='/intermediate' className='btn btn-primary'>
             Click Here
-          </a>
+          </Link>
         </div>
       </div>
       <div className='card m-3 p-3' style={{width: "18rem"}}>
@@ -40,9 +42,9 @@ const CareerOptions = () => {
             <br />
             Click below to know more about career in this...
           </p>
-          <a href='#' className='btn btn-primary'>
+          <Link to='/graduate' className='btn btn-primary'>
             Click Here
-          </a>
+          </Link>
         </div>
       </div>
       <div className='card m-3 p-3' style={{width: "18rem"}}>
@@ -54,9 +56,9 @@ const CareerOptions = () => {
             <br />
             Click below to know more about career in this...
           </p>
-          <a href='#' className='btn btn-primary'>
+          <Link to='/postGraduation' className='btn btn-primary'>
             Click Here
-          </a>
+          </Link>
         </div>
       </div>
     </div>
