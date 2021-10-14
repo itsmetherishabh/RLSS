@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const CareerOptions = () => {
   return (
-    <div className="d-flex container">
-      <div className='card m-3 p-3' style={{width: "18rem"}}>
+    <div className="container row">
+      <div className='card col-lg-3 col-md-4 col-12 my-3 mx-2 p-3'>
         <img src='...' className='card-img-top' alt='...' />
         <div className='card-body'>
           <h5 className='card-title'>Completed High Scool</h5>
@@ -19,7 +19,7 @@ const CareerOptions = () => {
           </Link>
         </div>
       </div>
-      <div className='card m-3 p-3' style={{width: "18rem"}}>
+      <div className='card col-lg-3 col-md-4 col-12 my-3 mx-2 p-3'>
         <img src='...' className='card-img-top' alt='...' />
         <div className='card-body'>
           <h5 className='card-title'>Completed Intermediate</h5>
@@ -33,7 +33,7 @@ const CareerOptions = () => {
           </Link>
         </div>
       </div>
-      <div className='card m-3 p-3' style={{width: "18rem"}}>
+      <div className='card col-lg-3 col-md-4 col-12 my-3 mx-2 p-3'>
         <img src='...' className='card-img-top' alt='...' />
         <div className='card-body'>
           <h5 className='card-title'>Completed Graduation</h5>
@@ -42,12 +42,12 @@ const CareerOptions = () => {
             <br />
             Click below to know more about career in this...
           </p>
-          <Link to='/graduate' className='btn btn-primary'>
+          <Link to='/graduation' className='btn btn-primary'>
             Click Here
           </Link>
         </div>
       </div>
-      <div className='card m-3 p-3' style={{width: "18rem"}}>
+      <div className='card col-lg-3 col-md-4 col-12 my-3 mx-2 p-3'>
         <img src='...' className='card-img-top' alt='...' />
         <div className='card-body'>
           <h5 className='card-title'>Completed Masters</h5>
