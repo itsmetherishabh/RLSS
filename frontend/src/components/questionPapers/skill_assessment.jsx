@@ -2,7 +2,7 @@ import React from 'react'
 
 const skill_assessment = () => {
     return (
-        <div class="container my-2">
+        <div className="container my-2">
             <form method="post" action="/commerce">
                 <label htmlFor="q1">Q1. Tell us about yourself in 2 sentance?</label>
                 <input type="text" className="form-control my-2" placeholder="type your answer" id="q1" required="true" />

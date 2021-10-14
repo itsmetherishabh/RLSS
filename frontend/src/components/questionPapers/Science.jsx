@@ -2,7 +2,7 @@ import React from 'react'
 
 const Science = () => {
     return (
-        <div class="container">
+        <div className="container">
             <form method="post" class="py-3" action="/science">
                 <label htmlFor="q1">Q1. What do you meant by Science?</label>
                 <input type="text" className="form-control" placeholder="type your answer" id="q1" required="true" />
