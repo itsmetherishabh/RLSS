@@ -1,14 +1,15 @@
 import React from 'react'
+import background from "../images/booksBg.jpg";
 
 const Contact = () => {
     return (
-        <div className="container my-3" id="contactPage">
+        <div className="container my-3" id="contactPage" style={{backgroundImage:`url(${background})`}}>
             <center>
             <div className="container">
                 <h1> Get In Touch</h1>
                 <p>To get in touch please fill up the below form </p>
                 <div className="row" style={{maxWidth: "50rem",textAlign: "left"}}>
-                    <div className="col-lg-5 col-12 mx-2" style={{maxWidth: "30rem"}}>
+                    <div className="col-lg-6 col-12 mx-5 ml-auto" style={{maxWidth: "50rem"}}>
                         <p>Drop a Message</p>
                         <form className="row g-2">
                             <div className="col-md-6">
@@ -55,7 +56,7 @@ const Contact = () => {
                             </div>
                         </form>
                     </div>
-                    <div className="mx-1 bg-success col-lg-3 col-12 p-2 text-light">
+                    <div className="mx-1 bg-success col-lg-3 mr-auto col-16 p-4 text-light">
                         <p>Contact Information</p>
                         <p>F-55 Sector 36 Greater Noida (201310)</p>
                         <p>+917834984092</p>

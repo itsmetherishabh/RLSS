@@ -47,6 +47,31 @@ const Navbar = () => {
                   Assessment
                 </Link>
               </li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Assessment2
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="/">Science</a></li>
+                  <li><a className="dropdown-item" href="/">Commerce</a></li>
+                  <li><a className="dropdown-item" href="/">Commerce with IP</a></li>
+                  <li><a className="dropdown-item" href="/">Humanties</a></li>
+                  <li><a className="dropdown-item" href="/">UPSC Prep</a></li>
+                </ul>
+              </li>
+              
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Assessment3
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/">Action</a></li>
+                  <li><a class="dropdown-item" href="/">Another action</a></li>
+                  <li><a class="dropdown-item" href="/">Something else here</a></li>
+                  {/* <li><hr class="dropdown-divider"/></li> */}
+                  <li><a class="dropdown-item" href="/">Separated link</a></li>
+                </ul>
+              </div>
               <li className='nav-item'>
                 <Link className='nav-link' to='/contact'>
                   ContactUs
