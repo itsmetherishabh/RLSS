@@ -4,7 +4,8 @@
   "description": "website for students",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node -r esm",
+    "dev": "nodemon -r esm"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/itsmetherishabh/RLSS/issues"
   },
-  "homepage": "https://github.com/itsmetherishabh/RLSS#readme"
+  "homepage": "https://github.com/itsmetherishabh/RLSS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11"
+  }
 }

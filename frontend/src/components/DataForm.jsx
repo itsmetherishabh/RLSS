@@ -5,7 +5,7 @@ const DataForm = () => {
     <div className='px-2 py-4'>
       <div className='container'>
         <h2>Enroll Yourself</h2>  
-        <form method='post' className="mt-2">
+        <form method='post' action="/enroll" className="mt-2">
           <label className='' htmlFor='name'>
             Name
           </label>
