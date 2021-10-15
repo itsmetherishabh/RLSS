@@ -61,10 +61,10 @@ const Navbar = () => {
               </li>
               
               <div class="btn-group">
-                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   Assessment3
                 </button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu bg-info">
                   <li><a class="dropdown-item" href="/">Action</a></li>
                   <li><a class="dropdown-item" href="/">Another action</a></li>
                   <li><a class="dropdown-item" href="/">Something else here</a></li>
