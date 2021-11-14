@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import bgEnroll from "../images/bgEnroll.jpg";
 
 const DataForm = () => {
   return (
     <div className= "p-4" style = {{minHeight: "40rem", backgroundImage: `url(${bgEnroll})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover"}}>
-      <div className='container mx-3' style = {{maxWidth: "40rem", float: "left"}}>
+      <div className='container p-4 mx-3' style = {{maxWidth: "40rem", float: "left",border:"2px solid white", borderRadius:"5px"}}>
         {/* <div> <img src={bgEnroll} style={{maxHeight:"500px"}}/> </div>  */}
         <h2>Enroll Yourself</h2>  
         <form method='post' action="/enroll" className="mt-2">
@@ -47,7 +48,6 @@ const DataForm = () => {
               type='radio'
               name='gender'
               id='male'
-              checked
             />
             <label className='form-check-label' for='male'>
               Male
@@ -79,6 +79,7 @@ const DataForm = () => {
           <input type='date' name="dob" className='form-control my-2' id="dob" style={{maxWidth:"200px"}} />
           <button type='submit' className='btn btn-primary my-2'>SUBMIT</button>
         </form>
+        Already Member? <Link to="/login" style={{color:"#fff", textDecoration:"none"}}>LOGIN</Link>
       </div>
     </div>
   );

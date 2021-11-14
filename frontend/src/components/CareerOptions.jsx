@@ -4,7 +4,6 @@ import tenth from "../images/tenth.png";
 import twelfth from "../images/twelfth.png";
 import underGrad from "../images/underGrad.jpg";
 import postGrad from "../images/postGrad.jpg";
-import careerBg from "../images/careerBg.jpg";
 
 
 const CareerOptions = () => {

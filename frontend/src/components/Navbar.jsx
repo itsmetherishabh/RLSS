@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <nav className='navbar navbar-expand-lg navbar-dark p-2' style={{background:"#212121"}}>
+      <nav className='navbar navbar-expand-lg navbar-dark px-2 py-3' style={{background:"#212121",fontSize:"1.2rem"}}>
         <div className='container-fluid'>
           <Link className='navbar-brand' to='/'>
             RLSS
@@ -72,11 +72,11 @@ const Navbar = () => {
                   {/* <li><a className="dropdown-item" href="/">Separated link</a></li>
                 </ul>
               </div>  */}
-              <li className='nav-item'>
+              {/* <li className='nav-item'>
                 <Link className='nav-link' to='/contact'>
                   ContactUs
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <form className='d-flex'>
               <input
