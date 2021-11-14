@@ -3,6 +3,7 @@ import React from 'react'
 const humanities = () => {
     return (
         <div className="container my-2">
+            <h1>Humanities Test</h1>
             <form method="post" action="/humanities">
                 <label htmlFor="q1">Q1. what do you understand by humanities?</label>
                 <input type="text" className="form-control my-2" placeholder="type your answer" id="q1" required="true" />

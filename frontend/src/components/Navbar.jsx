@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <nav className='navbar navbar-expand-lg navbar-dark bg-dark p-2'>
+      <nav className='navbar navbar-expand-lg navbar-dark p-2' style={{background:"#212121"}}>
         <div className='container-fluid'>
           <Link className='navbar-brand' to='/'>
             RLSS
@@ -47,7 +47,7 @@ const Navbar = () => {
                   Assessment
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Assessment2
                 </a>
@@ -58,20 +58,20 @@ const Navbar = () => {
                   <li><a className="dropdown-item" href="/">Humanties</a></li>
                   <li><a className="dropdown-item" href="/">UPSC Prep</a></li>
                 </ul>
-              </li>
+              </li> */}
               
-              <div class="btn-group">
-                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              {/* <div className="btn-group">
+                <button type="button" className="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                   Assessment3
                 </button>
-                <ul class="dropdown-menu bg-info">
-                  <li><a class="dropdown-item" href="/">Action</a></li>
-                  <li><a class="dropdown-item" href="/">Another action</a></li>
-                  <li><a class="dropdown-item" href="/">Something else here</a></li>
-                  {/* <li><hr class="dropdown-divider"/></li> */}
-                  <li><a class="dropdown-item" href="/">Separated link</a></li>
+                <ul className="dropdown-menu bg-info">
+                  <li><Link className="dropdown-item" to="/commerce">Action</Link></li>
+                  <li><a className="dropdown-item" href="/">Another action</a></li>
+                  <li><a className="dropdown-item" href="/">Something else here</a></li>
+                  {/* <li><hr className="dropdown-divider"/></li> */}
+                  {/* <li><a className="dropdown-item" href="/">Separated link</a></li>
                 </ul>
-              </div>
+              </div>  */}
               <li className='nav-item'>
                 <Link className='nav-link' to='/contact'>
                   ContactUs

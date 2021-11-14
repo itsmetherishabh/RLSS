@@ -3,6 +3,7 @@ import React from 'react'
 const personality_test = () => {
     return (
         <div className="container my-2">
+            <h1>Personality Test</h1>
             <form method="post" action="/personality_test">
                 <label htmlFor="q1">Q1. do you like meeting new people?</label>
                 <input type="text" className="form-control my-2" placeholder="type your answer" id="q1" required="true" />
