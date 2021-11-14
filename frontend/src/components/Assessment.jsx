@@ -8,6 +8,7 @@ import personality_test from "./questionPapers/personality_test";
 import skill_assessment from "./questionPapers/skill_assessment";
 import science from "../images/science.png";
 import commerce from "../images/commerce.jpg";
+import humanitiesPic from "../images/humanities.png";
 import personality from "../images/personality.webp";
 import skills from "../images/skills.png";
 
@@ -42,7 +43,7 @@ const Assessment = () => {
               </div>
             </div>
             <div className='col-lg-3 col-md-4 col-12 card my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
-              <img src='science.png' className='card-img-top' alt='...'  style={{height:"11rem"}} />
+              <img src={humanitiesPic} className='card-img-top' alt='...'  style={{height:"11rem"}} /> /
               <div className='card-body'>
                 <h5 className='card-title'>Humanities Questions</h5>
                 <p className='card-text'>
