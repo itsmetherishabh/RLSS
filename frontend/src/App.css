@@ -20,8 +20,7 @@
     position: relative;
 }
 b.tilt{
-    background:rgb(151, 224, 151);
-    
+    background:rgb(195, 240, 195);
     -ms-transform: rotate(20deg); /* IE 9 */
   transform: rotate(20deg);
 }
