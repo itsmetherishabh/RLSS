@@ -6,6 +6,7 @@ import Assessment from './components/Assessment';
 import DataForm from './components/DataForm';
 import Footer from './components/Footer';
 import CareerOptions from './components/CareerOptions';
+import Colleges from './components/Colleges';
 import Contact from './components/Contact';
 import HighSchool from './components/careerOptions/HighSchool';
 import Intermediate from './components/careerOptions/Intermediate';
@@ -22,11 +23,12 @@ function App() {
         <Route exact path="/assessment" component={Assessment}></Route>
         <Route exact path="/enroll" component={DataForm}></Route>
         <Route exact path="/career" component={CareerOptions}></Route>
-         <Route exact path="/contact" component={Contact}></Route> 
-         <Route exact path="/highSchool" component={HighSchool}></Route> 
-         <Route exact path="/intermediate" component={Intermediate}></Route>
-         <Route exact path="/graduation" component={Graduation}></Route>
-         <Route exact path="/postGraduation" component={PostGraduation}></Route>
+        <Route exact path="/colleges" component={Colleges}></Route>
+        <Route exact path="/contact" component={Contact}></Route> 
+        <Route exact path="/highSchool" component={HighSchool}></Route> 
+        <Route exact path="/intermediate" component={Intermediate}></Route>
+        <Route exact path="/graduation" component={Graduation}></Route>
+        <Route exact path="/postGraduation" component={PostGraduation}></Route>
       </Switch>
       <Footer />
     </Router>

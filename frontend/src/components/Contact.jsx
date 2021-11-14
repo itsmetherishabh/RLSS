@@ -53,8 +53,8 @@ const Contact = () => {
                             <p>Contact Information</p>
                             <p>F-55 Sector 36 Greater Noida (201310)</p>
                             <p>+917834984092</p>
-                            <p>website@gmail.com</p>
-                            <p>website.com</p>
+                            <p>rlss@gmail.com</p>
+                            <p>rlss.com</p>
                             <div className="row">
                                 <div className="col-3"><i className="fab fa-facebook"></i></div>
                                 <div className="col-3"><i className="fab fa-instagram"></i></div>
