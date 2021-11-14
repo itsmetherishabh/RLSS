@@ -1,9 +1,11 @@
 import React from "react";
+import bgEnroll from "../images/bgEnroll.jpg";
 
 const DataForm = () => {
   return (
-    <div className='px-2 py-4'>
-      <div className='container'>
+    <div className= "p-4" style = {{minHeight: "40rem", backgroundImage: `url(${bgEnroll})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover"}}>
+      <div className='container mx-3' style = {{maxWidth: "40rem", float: "left"}}>
+        {/* <div> <img src={bgEnroll} style={{maxHeight:"500px"}}/> </div>  */}
         <h2>Enroll Yourself</h2>  
         <form method='post' action="/enroll" className="mt-2">
           <label className='' htmlFor='name'>
