@@ -1,10 +1,11 @@
 import React from "react";
+import './css/Navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div>
-      <nav className='navbar navbar-expand-lg navbar-dark px-2 py-3' style={{background:"#212121",fontSize:"1.2rem"}}>
+      <nav className='navbar navbar-expand-lg px-2 py-3' style={{fontSize:"1.2rem"}}>
         <div className='container-fluid'>
           <Link className='navbar-brand' to='/'>
             RLSS
@@ -24,27 +25,27 @@ const Navbar = () => {
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
               <li className='nav-item'>
                 <Link className='nav-link' aria-current='page' to='/'>
-                  Home
+                  HOME
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link className='nav-link' to='/career'>
-                  Career Options
+                  CAREER OPTIONS
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link className='nav-link' to='/colleges'>
-                  Colleges
+                  COLLEGES
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link className='nav-link' to='/enroll'>
-                  Enroll
+                  ENROLL
                 </Link>
               </li>
               <li className='nav-item'>
                 <Link className='nav-link' to='/assessment'>
-                  Assessment
+                  ASSESSMENT
                 </Link>
               </li>
               {/* <li className="nav-item dropdown">
@@ -86,7 +87,7 @@ const Navbar = () => {
                 aria-label='Search'
               />
               <button className='btn btn-outline-success' type='submit'>
-                Search
+                SEARCH
               </button>
             </form>
           </div>

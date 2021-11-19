@@ -1,0 +1,14 @@
+.navbar{
+    background:rgb(195, 240, 195);
+    /* font-family: Verdana, sans-serif; */
+}
+.nav-link{
+    color:navy;
+    letter-spacing:1px;
+}
+.nav-link:hover{
+    color:green;
+    /* border-bottom:2px solid green; */
+    text-decoration:overline;
+    /* text-shadow: 2px 2px 5px green; */
+}

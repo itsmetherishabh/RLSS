@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Team = () => {
     return(
         <div className="py-4" style={{background:"rgb(151, 224, 151)",minHeight:"40rem"}}>
             <div className="container">
-                <h2><u>Our T</u>eam</h2>
+                <h2><u>OUR T</u>EAM</h2>
                 <div className="d-flex p-2" style={{border:"2px solid white",borderRadius:"5px"}}>
                     <div className="p-1" style={{maxHeight:"12rem"}}>
                         <img src="..."  alt="team member's profile"  />

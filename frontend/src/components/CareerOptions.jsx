@@ -12,7 +12,7 @@ const CareerOptions = () => {
     {/* <div style={{backgroundImage:`url(${careerBg})`,backgroundSize:`cover`,backgroundRepeat:`no-repeat`}}> */}
       <div className="container">
         <div className="row">
-          <div className='card col-lg-3 col-md-5 col-12 my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+          <div className='card col-lg-3 col-md-5 col-sm my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
             <img src={tenth} className='card-img-top' alt='10th logo' />
             <div className='card-body'>
               <h5 className='card-title'>Completed High Scool</h5>
@@ -26,7 +26,7 @@ const CareerOptions = () => {
               </Link>
             </div>
           </div>
-          <div className='card col-lg-3 col-md-5 col-12 my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+          <div className='card col-lg-3 col-md-5 col-sm my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
             <img src={twelfth} className='card-img-top' alt='12th logo' />
             <div className='card-body'>
               <h5 className='card-title'>Completed Intermediate</h5>
@@ -40,7 +40,7 @@ const CareerOptions = () => {
               </Link>
             </div>
           </div>
-          <div className='card col-lg-3 col-md-5 col-12 my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+          <div className='card col-lg-3 col-md-5 col-sm my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
             <img src={underGrad} className='card-img-top' alt='under graduation logo' />
             <div className='card-body'>
               <h5 className='card-title'>Completed Graduation</h5>
@@ -54,7 +54,7 @@ const CareerOptions = () => {
               </Link>
             </div>
           </div>
-          <div className='card col-lg-3 col-md-5 col-12 my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+          <div className='card col-lg-3 col-md-5 col-sm my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
             <img src={postGrad} className='card-img-top' alt='post graduation logo' style={{maxHeight:"12rem"}} />
             <div className='card-body'>
               <h5 className='card-title'>Completed Masters</h5>

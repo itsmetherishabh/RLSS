@@ -1,0 +1,9 @@
+.dataForm_Content{
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+.dataForm_Content>form{
+    /* filter: blur(0px);
+  -webkit-filter: blur(0px); */
+  color:yellow;
+}

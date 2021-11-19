@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './css/DataForm.css';
 import bgEnroll from "../images/bgEnroll.jpg";
 
 const DataForm = () => {
   return (
-    <div className= "p-4" style = {{minHeight: "40rem", backgroundImage: `url(${bgEnroll})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover"}}>
+    <div className= "p-4 dataForm_Content" style = {{minHeight: "40rem", backgroundImage: `url(${bgEnroll})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover"}}>
       <div className='container p-4 mx-3' style = {{maxWidth: "40rem", float: "left",border:"2px solid white", borderRadius:"5px"}}>
         {/* <div> <img src={bgEnroll} style={{maxHeight:"500px"}}/> </div>  */}
         <h2>Enroll Yourself</h2>  
-        <form method='post' action="/enroll" className="mt-2">
+        <form method='post' action="/api/enroll" className="mt-2">
           <label className='' htmlFor='name'>
             Name
           </label>

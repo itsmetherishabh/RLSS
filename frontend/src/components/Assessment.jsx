@@ -18,7 +18,7 @@ const Assessment = () => {
       <Router>
         <div className='container'>
           <div className="row">
-            <div className='col-lg-3 col-md-4 col-12 card my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
               <img src={science} className='card-img-top' alt='...' style={{height:"11rem"}} />
               <div className='card-body'>
                 <h5 className='card-title'>Science Questions</h5>
@@ -30,7 +30,7 @@ const Assessment = () => {
                 </Link>
               </div>
             </div>
-            <div className='col-lg-3 col-md-4 col-12 card my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
               <img src={commerce} className='card-img-top' alt='...'  style={{height:"11rem"}} />
               <div className='card-body'>
                 <h5 className='card-title'>Commerce Questions</h5>
@@ -42,8 +42,8 @@ const Assessment = () => {
                 </Link>
               </div>
             </div>
-            <div className='col-lg-3 col-md-4 col-12 card my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
-              <img src={humanitiesPic} className='card-img-top' alt='...'  style={{height:"11rem"}} /> /
+            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
+              <img src={humanitiesPic} className='card-img-top' alt='...'  style={{height:"11rem"}} /> 
               <div className='card-body'>
                 <h5 className='card-title'>Humanities Questions</h5>
                 <p className='card-text'>
@@ -54,7 +54,7 @@ const Assessment = () => {
                 </Link>
               </div>
             </div>
-            <div className='col-lg-3 col-md-4 col-12 card my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
               <img src={personality} className='card-img-top' alt='...'  style={{height:"11rem"}} />
               <div className='card-body'>
                 <h5 className='card-title'>Personality Test Questions</h5>
@@ -66,7 +66,7 @@ const Assessment = () => {
                 </Link>
               </div>
             </div>
-            <div className='col-lg-3 col-md-4 col-12 card my-3 mx-1 p-3' style={{maxWidth:"20rem"}}>
+            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
               <img src={skills} className='card-img-top' alt='skills'  style={{height:"11rem"}} />
               <div className='card-body'>
                 <h5 className='card-title'>Skill Assessment Questions</h5>
@@ -92,6 +92,7 @@ const Assessment = () => {
         <hr/>
 
         <Switch>
+          <div className="bg-light py-2">
           <Route exact path='/science' component={Science}></Route>
           <Route exact path='/commerce' component={Commerce}></Route>
           <Route exact path='/humanities' component={humanities}></Route>
@@ -105,6 +106,7 @@ const Assessment = () => {
             path='/skill_assessment'
             component={skill_assessment}
           ></Route>
+          </div>
         </Switch>
       </Router>
     </div>
