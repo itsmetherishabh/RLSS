@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-      <nav className='navbar navbar-expand-lg px-2 py-3' style={{fontSize:"1.2rem"}}>
+      <nav className='navbar navbar-expand-lg px-1 py-1' style={{fontSize:"1.2rem"}}>
         <div className='container-fluid'>
           <Link className='navbar-brand' to='/'>
             RLSS
