@@ -17,7 +17,7 @@ rlssRouter.get('/enroll', (req,res) => {
     }
 });
 
-rlssRouter.post('/enroll', async(req,res) => {
+rlssRouter.post('api/enroll', async(req,res) => {
     try{
         let { body } = req;
 

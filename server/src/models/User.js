@@ -15,7 +15,7 @@ const UserSchema = new Schema({
     },
     dob: {
         type: Date,
-        reuired: true
+        required: true
     },
     gender: {
         type: String
