@@ -13,80 +13,61 @@ import personality from "../images/personality.webp";
 import skills from "../images/skills.png";
 
 const Assessment = () => {
+  var topics = [
+    {
+      img:science,
+      heading:"Science Questions",
+      description:"You can click below to take a science test.",
+      url:"/science"
+    },
+    {
+      img:commerce,
+      heading:"Commerce Questions",
+      description:"You can click below to take a commerce test.",
+      url:"/commerce"
+    },
+    {
+      img:humanitiesPic,
+      heading:"Humanities Questions",
+      description:"You can click below to take a humanities test.",
+      url:"/humanities"
+    },
+    {
+      img:personality,
+      heading:"Personality Test Questions",
+      description:"You can click below to take a personality test.",
+      url:"/personality"
+    },
+    {
+      img:skills,
+      heading:"Skill Assessment Questions",
+      description:"You can click below to take a skill assesment test.",
+      url:"/skill_assessment"
+    }
+  ];
   return (
     <div className="py-2" style={{background:"#F1E9E5"}}>
       <Router>
         <div className='container'>
           <div className="row">
-            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
-              <img src={science} className='card-img-top' alt='...' style={{height:"11rem"}} />
-              <div className='card-body'>
-                <h5 className='card-title'>Science Questions</h5>
-                <p className='card-text'>
-                  You can click below to take a science test.
-                </p>
-                <Link to='/science' className='btn btn-primary'>
-                  Click Here
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
-              <img src={commerce} className='card-img-top' alt='...'  style={{height:"11rem"}} />
-              <div className='card-body'>
-                <h5 className='card-title'>Commerce Questions</h5>
-                <p className='card-text'>
-                  You can click below to take a commerce test.
-                </p>
-                <Link to='/commerce' className='btn btn-primary'>
-                  Click Here
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
-              <img src={humanitiesPic} className='card-img-top' alt='...'  style={{height:"11rem"}} /> 
-              <div className='card-body'>
-                <h5 className='card-title'>Humanities Questions</h5>
-                <p className='card-text'>
-                  You can click below to take a humanities test.
-                </p>
-                <Link to='/humanities' className='btn btn-primary'>
-                  Click Here
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
-              <img src={personality} className='card-img-top' alt='...'  style={{height:"11rem"}} />
-              <div className='card-body'>
-                <h5 className='card-title'>Personality Test Questions</h5>
-                <p className='card-text'>
-                  You can click below to take a personality test.
-                </p>
-                <Link to='/personality_test' className='btn btn-primary'>
-                  Click Here
-                </Link>
-              </div>
-            </div>
-            <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
-              <img src={skills} className='card-img-top' alt='skills'  style={{height:"11rem"}} />
-              <div className='card-body'>
-                <h5 className='card-title'>Skill Assessment Questions</h5>
-                <p className='card-text'>
-                  You can click below to take a skill assesment test.
-                </p>
-                <Link to='/skill_assessment' className='btn btn-primary'>
-                  Click Here
-                </Link>
-              </div>
-            </div>
-          {/* <Link className='btn btn-light btn-lg mx-2' to='/humanities'>
-            humanities
-          </Link>
-          <Link className='btn btn-light btn-lg mx-2' to='/personality_test'>
-            personality_test
-          </Link>
-          <Link className='btn btn-light btn-lg mx-2' to='/skill_assessment'>
-            skill_assessment
-          </Link> */}
+            {
+              topics.map((topic) => {
+                return (
+                  <div className='col-lg-3 col-md-5 col-sm card my-3 mx-auto p-3' style={{maxWidth:"20rem"}}>
+                    <img src={topic.img} className='card-img-top' alt='...' style={{height:"11rem"}} />
+                    <div className='card-body'>
+                      <h5 className='card-title'>{topic.heading}</h5>
+                      <p className='card-text'>
+                        {topic.description}
+                      </p>
+                      <Link to={topic.url} className='btn btn-primary'>
+                        Click Here
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })
+            }
           </div>
         </div>
         <hr/>

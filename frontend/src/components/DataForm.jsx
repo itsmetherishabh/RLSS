@@ -1,5 +1,6 @@
 // import React from "react";
 import { useState } from "react";
+import api from "../api";
 import { Link } from "react-router-dom";
 import './css/DataForm.css';
 import bgEnroll from "../images/bgEnroll.jpg";
@@ -7,6 +8,7 @@ import bgEnroll from "../images/bgEnroll.jpg";
 const initNewUser = {
   name: "",
   email:"",
+  password:"",
   phone:"",
   gender:"",
   dob:""
@@ -19,26 +21,28 @@ const DataForm = () => {
 
   const onChange = ({ target : {name, value}}) => {
     setNewUser({...newUser, [name] : value});
-    console.log(newUser);
+    // console.log(newUser);
   };
 
-  const submitUser = (e) => {
+  const submitUser = async (e) => {
     e.preventDefault();
     try{
-      setNewUser(newUser);
-      setUsers([...users, newUser]);
-      console.log(users);
+      let { data } = await api.post("/rlss/enroll", newUser);
+      setNewUser(initNewUser);
+      setUsers([...users, data]);
+      // api.get("/rlss/dashboard", users);
+      // console.log(users);
     }catch(err){
       console.log(err.message);
     }
-  }
+  };
 
   return (
-    <div className= "p-4 dataForm_Content" style = {{minHeight: "40rem", backgroundImage: `url(${bgEnroll})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover"}}>
+    <div className= "p-4 dataForm_Content" style = {{minHeight: "45rem", backgroundImage: `url(${bgEnroll})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover"}}>
       <div className='container p-4 mx-3' style = {{maxWidth: "40rem", float: "left",border:"2px solid white", borderRadius:"5px"}}>
         {/* <div> <img src={bgEnroll} style={{maxHeight:"500px"}}/> </div>  */}
         <h2>Enroll Yourself</h2>  
-        <form onSubmit={submitUser} method="post" action="/enroll" className="mt-2">
+        <form onSubmit={submitUser} method="post" className="mt-2">
           <label className='' htmlFor='name'>
             Name
           </label>
@@ -47,7 +51,7 @@ const DataForm = () => {
             name='name'
             className='form-control my-2'
             id='name'
-            placeholder='enter your name'onChange={onChange} 
+            placeholder='enter your name' onChange={onChange} 
           />
           <label className='' htmlFor='email'>
             Email
@@ -57,7 +61,18 @@ const DataForm = () => {
             name='email'
             className='form-control my-2'
             id='email'
-            placeholder='name@example.com'onChange={onChange} 
+            placeholder='name@example.com' onChange={onChange} 
+          />
+          <label className='' htmlFor='password'>
+            Password
+          </label>
+          <input
+            type='password'
+            name='password'
+            className='form-control my-2'
+            id='password'
+            placeholder='choose a password'
+            onChange={onChange} 
           />
           <label className='' htmlFor='phone'>
             Phone
@@ -67,7 +82,7 @@ const DataForm = () => {
             name='phone'
             className='form-control my-2'
             id='phone'
-            placeholder='enter your phone number'onChange={onChange} 
+            placeholder='enter your phone number' onChange={onChange} 
           />
           <label className='' htmlFor='gender'>
             Gender

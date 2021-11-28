@@ -14,7 +14,7 @@ const Home = () => {
         <span><b style={{height:"50px", padding:"5px", fontSize:"3.5rem"}}>R</b>ESEARCH ON <b style={{padding:"5px 8px", fontSize:"3.5rem"}}>L</b>EARNING POST <b style={{padding:"5px 8px", fontSize:"3.5rem"}}>S</b>CHOOL & <b style={{padding:"5px 8px", fontSize:"3.5rem"}}>S</b>COPE</span>
         <div className="mx-4 py-4 rounded" style={{ minHeight: "35rem", backgroundImage: `url(${topImg})`, backgroundRepeat: 'no-repeat', backgroundSize: "cover" }}> 
             <p style={{ fontSize: "4rem", color: "white" }}>THE CAREER GUIDE TO EXCEL IN LIFE</p>
-            <a href="" className="btn btn-md btn-secondary">Read More</a>
+            <a href="/" className="btn btn-md btn-secondary">Read More</a>
         </div>
         {/* <img src = { topImg } /> */}
       </section>
@@ -79,8 +79,8 @@ const Home = () => {
             <Link to="/" className="btn btn-md btn-dark"> Learn More </Link>
           </div>
           <div className="bg-secondary" style = {{  float: "left" }}>
-            <img src={topImg} style={{ maxWidth: "20rem", position:'absolute', zIndex:'0', left:'20%' }} />
-            <img src={topImg} className="mt-4" style={{ maxWidth: "20rem", position:'absolute', zIndex:'1', left:'35%', border: '20px solid white' }} />
+            <img src={topImg} alt="..." style={{ maxWidth: "20rem", position:'absolute', zIndex:'0', left:'20%' }} />
+            <img src={topImg} alt="..." className="mt-4" style={{ maxWidth: "20rem", position:'absolute', zIndex:'1', left:'35%', border: '20px solid white' }} />
 
           </div>
         </div>

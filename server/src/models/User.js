@@ -5,6 +5,10 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    password: {
+        type: String,
+        required: true
+    },
     name: {
         type: String,
         required: true
@@ -13,12 +17,12 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    gender: {
+        type: String
+    },
     dob: {
         type: Date,
         required: true
-    },
-    gender: {
-        type: String
     }
 }, {timestamps: true});
 
