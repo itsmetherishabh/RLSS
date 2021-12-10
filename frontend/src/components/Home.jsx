@@ -1,6 +1,11 @@
 import React from 'react';
 import './css/Home.css';
-import topImg from "../images/homeBook2.jpg";
+import topImg from "../images/homeBook.jpg";
+import homeCollege from "../images/homeCollege.jpg";
+import homeAsses from "../images/homeAsses.jpg";
+import homeCareer from "../images/homeCareer.jpg";
+import homeInfo from "../images/homeInfo.jpg";
+import homeInfo2 from "../images/homeInfo2.jpg";
 import { Link } from "react-router-dom";
 
 
@@ -42,7 +47,7 @@ const Home = () => {
 
         <div className="row mx-auto px-3">
           <div className='card col-lg-3 col-md-5 col-sm my-3 mx-auto py-2 px-3' style={{maxWidth:"23rem"}}>
-            <img src={topImg} className='card-img-top' alt='12th logo' />
+            <img src={homeCareer} className='card-img-top' alt='12th logo' />
             <div className='card-body'>
               <Link to='/intermediate' className='btn btn-secondary'>
                 CAREER
@@ -50,7 +55,7 @@ const Home = () => {
             </div>
           </div>
           <div className='card col-lg-3 col-md-5 col-sm my-3 mx-auto py-2 px-3' style={{maxWidth:"23rem"}}>
-            <img src={topImg} className='card-img-top' alt='under graduation logo' />
+            <img src={homeAsses} className='card-img-top' alt='under graduation logo' />
             <div className='card-body'>
               <Link to='/graduation' className='btn btn-secondary'>
                 ASSESSMENT
@@ -58,7 +63,7 @@ const Home = () => {
             </div>
           </div>
           <div className='card col-lg-3 col-md-5 col-sm my-3 mx-auto py-2 px-3' style={{maxWidth:"23rem"}}>
-            <img src={topImg} className='card-img-top' alt='post graduation logo' style={{maxHeight:"12rem"}} />
+            <img src={homeCollege} className='card-img-top' alt='post graduation logo' style={{maxHeight:"12rem"}} />
             <div className='card-body'>
               <Link to='/postGraduation' className='btn btn-secondary'>
                 COLLEGES
@@ -73,14 +78,14 @@ const Home = () => {
           <h3> MORE INFORMATION ABOUT COLLEGES </h3>
           <p> We offer proper career guide and suggest some lists of colleges. Some tests paper are there to solve </p>
         </div>
-        <div className="bg-secondary pt-4" style={{ height: "18rem" }}>
+        <div className="bg-secondary pt-4" style={{ height: "28rem" }}>
           <div className="bg-light my-4 p-4 text-left" style={{ width: "18rem", position:'absolute', zIndex:'1', left:'5%', float: "left"}}>
             <p> We offer proper career guide and suggest some lists of colleges. Some tests paper are there to solve </p>
             <Link to="/" className="btn btn-md btn-dark"> Learn More </Link>
           </div>
           <div className="bg-secondary" style = {{  float: "left" }}>
-            <img src={topImg} alt="..." style={{ maxWidth: "20rem", position:'absolute', zIndex:'0', left:'20%' }} />
-            <img src={topImg} alt="..." className="mt-4" style={{ maxWidth: "20rem", position:'absolute', zIndex:'1', left:'35%', border: '20px solid white' }} />
+            <img src={homeInfo} alt="..." style={{ maxWidth: "20rem", position:'absolute', zIndex:'0', left:'20%' }} />
+            <img src={homeInfo2} alt="..." className="mt-4" style={{ maxWidth: "20rem", position:'absolute', zIndex:'1', left:'35%', border: '20px solid white' }} />
 
           </div>
         </div>
