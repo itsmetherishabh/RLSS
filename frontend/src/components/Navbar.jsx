@@ -48,6 +48,11 @@ const Navbar = () => {
                   ASSESSMENT
                 </Link>
               </li>
+              <li className='nav-item'>
+                <Link className='nav-link' to='/enroll2'>
+                  Enroll2
+                </Link>
+              </li>
               {/* <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Assessment2

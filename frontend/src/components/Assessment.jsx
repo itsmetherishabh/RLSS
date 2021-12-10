@@ -36,7 +36,7 @@ const Assessment = () => {
       img:personality,
       heading:"Personality Test Questions",
       description:"You can click below to take a personality test.",
-      url:"/personality"
+      url:"/personality_test"
     },
     {
       img:skills,
