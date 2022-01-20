@@ -7,7 +7,8 @@
     letter-spacing:1px;
 }
 .nav-link:hover{
-    color:green;
+    color:white;
+    text-shadow: 1px 2px 5px #0a133bea;
     /* border-bottom:2px solid green; */
     text-decoration:overline;
     /* text-shadow: 2px 2px 5px green; */

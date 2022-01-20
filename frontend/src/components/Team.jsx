@@ -1,5 +1,8 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import rishabh from "../images/rishabh.jpg";
+import sonali from "../images/sonali.jpeg";
+
 
 const Team = () => {
     return(
@@ -8,9 +11,9 @@ const Team = () => {
                 <h2><u>OUR T</u>EAM</h2>
                 <div className="d-flex p-2" style={{border:"2px solid white",borderRadius:"5px"}}>
                     <div className="p-1" style={{maxHeight:"12rem"}}>
-                        <img src="..."  alt="team member's profile"  />
+                        <img src={rishabh} style={{maxHeight:"10rem"}} alt="team member's profile"  />
                     </div>
-                    <div>
+                    <div className="p-2">
                         <h3>Rishabh Jain</h3>
                         <p>(LEADER)</p>
                         <p>I'm a fresher web developer. MCA(2022) from JIMS - IP</p>
@@ -24,9 +27,9 @@ const Team = () => {
                 </div>
                 <div className="d-flex p-2" style={{border:"2px solid white",borderRadius:"5px"}}>
                     <div className="p-1" style={{maxHeight:"12rem"}}>
-                        <img src="..." alt="team member's profile"  />
+                        <img src={sonali} style={{maxHeight:"10rem"}} alt="team member's profile"  />
                     </div>
-                    <div>
+                    <div className="p-2">
                         <h3>Sonali Aswal</h3>
                         <p>I'm a fresher web developer. MCA(2022) from JIMS - IP</p>
                         <div className="row">

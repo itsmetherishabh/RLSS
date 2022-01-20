@@ -26,8 +26,8 @@ const Contact = () => {
                                     <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
                                 </div>
                                 <div className="col-12">
-                                    <label htmlFor="inputAddress2" className="form-label">Address 2</label>
-                                    <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+                                    <label htmlFor="query" className="form-label">Your Query</label>
+                                    <input type="text" className="form-control" id="query" placeholder=""/>
                                 </div>
                                 <div className="col-md-5">
                                     <label htmlFor="inputCity" className="form-label">City</label>
